@@ -1,22 +1,22 @@
-# Ex.No:2(C)    SINGLE ARRAY
+# Ex.No:2(B) ACCESS MODIFIERS
 
 ## AIM:
-To create a java program to read 5 values and display the all 5 values from array using single dimensional array.
+To develop a Java Program to display the addition number using private modifiers only.
 
 ## ALGORITHM :
 1.	Start the program.
-2.	2.	Import the `Scanner` class from the `java.util` package
-3.	Define a class named `ArrayExample`
-4.	Inside the `main` method:
--	a) Create a `Scanner` object called `scanner` to take user input
--	b) Declare an integer array `values` of size 5
--	c) Use a `for` loop to iterate from `i = 0` to `i < 5`:
--   d) Take input from the user and store it in `values[i]`
-5.	Print "Elements in Array are :"
-6.	Use another `for` loop to iterate from `i = 0` to `i < 5`:
--	a) Print each element in `values` followed by a space
-7.	Close the `scanner` to release resources
-8.	End
+2.	Define a class named `addition`
+3.	Declare two private integer variables, `num1` and `num2`
+4.	Define a private method `add()` that:
+a)	Returns the sum of `num1` and `num2`
+5.	Define a public method `display(int n1, int n2)` that:
+a)	Assigns `n1` to `num1` and `n2` to `num2`
+b)	Calls the `add()` method and prints the result using `System.out.println`
+6.	Define the `main` method as static
+a)	Create an instance of the `addition` class called `ad`
+b)	Call the `display(8, 9)` method on the `ad` object
+7.	End
+
 
 
 
@@ -25,14 +25,30 @@ To create a java program to read 5 values and display the all 5 values from arra
 ## PROGRAM:
  ```
 /*
-Program to implement a Single Array using Java
-Developed by: 
-RegisterNumber:  
+Program to implement a access modifiers using Java
+Developed by: Ramkumar S
+RegisterNumber: 212223220085
 */
 ```
 
 ## Sourcecode.java:
 
+```
+public class A
+{ 
+    private void display() 
+    { 
+        int a=8,b=9;
+        System.out.println(a+b); 
+    }
+    public static void main(String args[])
+    {
+        A obj= new A();
+        obj.display();
+    }
+}
+
+```
 
 
 
@@ -41,9 +57,13 @@ RegisterNumber:
 
 ## OUTPUT:
 
+```
+Expected    Got 
 
+17          17
+```
 
 ## RESULT:
-Thus, the Java program Thus the java program to read 5 values and display the all 5 values from array using single dimensional  was executed successfully.
+Thus the java program to display the addition number using private modifiers only was executed successfully.
 
 
