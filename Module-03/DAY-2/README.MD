@@ -1,49 +1,65 @@
-# Ex.No:3(B) STRING BUFFER IN JAVA
-
+# Ex.No:3(A)  STRING AND ITS OPERATIONS IN JAVA
 ## AIM:
-To develop a java program use append() method concatenates the given argument with this String and use stringbuffer class.
+To create a java program to read input and print length of the string in java.
 
 ## ALGORITHM :
-1.	Start the program.
-2.	Import `Scanner` and define class `concat`
-3.	In `main`:
--	a) Create `Scanner` object `sc`
--	b) Read two strings `a` and `b` from user input
-4.	Create a `StringBuffer` object `sb` initialized with string `a`
-5.	Append a space and string `b` to `sb`
-6.	Print the concatenated result from `sb`
-7.	End
+1.Start the program.
 
+2.Define a class named Addition.
 
+3.Declare two private integer variables, num1 and num2.
+
+4.Define a private method add() that:
+a)  Returns the sum of num1 and num2.
+
+5.Define a public method display(int n1, int n2) that:
+a)  Assigns n1 to num1 and n2 to num2.
+b)  Calls the add() method and prints the result using System.out.println.
+
+6Define the main method as static.
+a)  Create an instance of the Addition class called ad.
+b)  Call the display(8, 9) method on the ad object.
+
+7.End the program.
 
 ## PROGRAM:
  ```
 /*
-Program to implement a String Buffer using Java
+Program to implement a variable and operators using Java
 Developed by: DEVADHARSHINI
-Registeration Number :212223240026
+RegisterNumber: 212223240026
 */
 ```
 
 ## Sourcecode.java:
-```java
-import java.util.*;
-public class StringBufferExample3{  
-    public static void main(String args[]){ 
-        Scanner sc=new Scanner(System.in);
-        String str1=sc.nextLine();
-        StringBuffer sb=new StringBuffer(str1);  
-        sb.replace(7,11,"Java");  
-        System.out.println(sb); 
-}  
-}  
 ```
+import java.util.Scanner;
+
+public class StringEqualityCheck {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        
+        String string1 = scanner.nextLine();
+
+       
+        String string2 = scanner.nextLine();
+
+        
+        boolean areEqual = string1.equals(string2);
+
+       
+        System.out.println(areEqual);
+
+        scanner.close();
+    }
+}
+```
+
 ## OUTPUT:
-```
-i code prog
-i code Java
-```
+<img width="513" alt="IMG1" src="https://github.com/user-attachments/assets/efe35baa-fdd2-4dea-a602-c54201aee16d" />
 
 ## RESULT:
+Thus the java Program to read input and print length of the string in java was executed successfully.
 
-Thus the java program use append() method concatenates the given argument with this String and use stringbuffer class was executed successfully.
