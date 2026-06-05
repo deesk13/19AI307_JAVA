@@ -1,52 +1,100 @@
-# Ex.No:4(C)    CONSTRUCTOR CHAINING(SUPER KEYWORD)
+# Ex.No:4(B) INTRODUCTION TO JAVA INHERITANCE
 
 ## AIM:
-To Create a Java program to implement super keyword in constructor.
+To write a Java program for below situation, Student object contains member 'Stu_Id'. It contains object named course, which contains its own informations such as Degree, Branch, Year of Studying.
 
 ## ALGORITHM :
-1.  Start the Program.
-2.	Define class `College`:
--	a) Define method `display()` that prints "I am a Vehicle"
-3.	Define class `Student` that extends `College`:
--	a) Override method `display()` to print "I am a Car"
--	b) Define method `print()`:
--	i) Call `super.display()` to invoke `display()` from `College` class
--	ii) Call `this.display()` to invoke `display()` from `Student` class
-4.	Define `Main` class with `main` method:
--	a) Create a `Student` object `sc`
--	b) Call `sc.print()` to execute the `print()` method
-5.	End
 
+1. Start
 
+2. Define class Subject:
 
+   Declare four String variables: subject1, subject2, subject3, subject4.
 
+   Create a method dispSub(String subject1, String subject2, String subject3, String subject4):
 
+   Print the four subjects separated by spaces.
 
+3. Define class Student:
+
+   Declare an int variable Stu_Id.
+
+   Create an object obj of class Subject.
+
+   Create a method disp(int id):
+
+   Print the student ID.
+
+   Call dispSub method of Subject object obj, passing "B.Tech", "IT", "Third", "year".
+
+4. Define class Main:
+
+   In the main method:
+
+   Create an object of Student class.
+
+   Call the disp method on the Student object, passing 101 as the student ID.
+
+5. End
 
 ## PROGRAM:
  ```
 /*
-Program to implement a Constructor Chaining using Java
-Developed by: 
-RegisterNumber:  
+Program to implement a Inheritance using Java
+Developed by: Priyanka A
+RegisterNumber: 212222230113
 */
 ```
 
 ## Sourcecode.java:
+```
 
+class Subject
+{
+    
+    String subject1,subject2,subject3,subject4;
+      //Write Your Code Here
+      
+    void dispSub(String subject1,String subject2,String subject3,String subject4)
+    {
+        System.out.println(subject1+" "+subject2+" "+subject3+" "+subject4);
+         //Write Your Code Here
+    }
+}
+class Student
+{
+    int Stu_Id;
+    Subject obj = new Subject();
+    
+    //Write Your Code Here
+    
+    void disp(int id)
+    {
+        System.out.println(id);
+        obj.dispSub("B.Tech","IT","Third","year");
+        //Write Your Code Here
+    }
+}
 
-
-
-
+public class Main
+{
+    public static void main(String[] args)
+    {
+        //Write Your Code Here
+        Student obj = new Student();
+        obj.disp(101);
+        
+    }
+}
+```
 
 
 ## OUTPUT:
-
-
-
+```
+Input      Expected                 Got
+---        101                      101
+           B.Tech IT Third year     B.Tech IT Third year
+```
 ## RESULT:
-Thus the java program for constructor chaining was executed successfully.
-
-
-
+Thus the Java program to implement the program for below situation, Student object contains member 'Stu_Id'. It contains object named course, which contains its own informations such as Degree, Branch, Year of Studying was  executed successfully.
 
