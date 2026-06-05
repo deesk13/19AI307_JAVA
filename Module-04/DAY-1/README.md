@@ -1,41 +1,58 @@
-# Ex.No:4(A)  JAVA CONSTRUCTOR
+# Ex.No:3(E)  STRINGBUILDER OBJECT REFERENCE IN JAVA
+
 ## AIM:
-To create a Java program using constructor to print the circumference of rectangle.[l=5,w=6]
+To write a java program to calculate the number of tokens present in the tokenizer string.
 
 ## ALGORITHM :
-1.  1.	Start the Program.
-2.	Define a class `circum`
-3.	Inside the class, define two integer variables `l` and `w` with values 5 and 6, respectively
-4.	Create a constructor `circum()`:
--	a) Calculate the `circumference` as `2 * (l + w)`
--	b) Print the `circumference` twice with different labels ("Area of First Rectangle" and "Area of Second Rectangle")
-5.	In `main`, create an object `sc` of the `circum` class
-6.	End
+Step 1: Start
+Step 2: Import the required classes:
+import java.util.* for Scanner and StringTokenizer.
+Step 3: Create the Main class.
+Step 4: Inside the main method:
 
+a. Create a Scanner object to read user input.
 
+b. Read a full line of text input from the user using nextLine().
 
+c. Create a StringTokenizer object with the input string as its argument.
 
+d. Use countTokens() method to count the number of tokens (words separated by whitespace by default).
 
+e. Print the total number of tokens.
+
+Step 5: End
 ## PROGRAM:
  ```
 /*
-Program to implement a Constructor using Java
-Developed by: 
-RegisterNumber:  
+Program to implement a StringBuilder Object Reference in Java
+Developed by: DEVADHARSHINI
+RegisterNumber: 212223240026
 */
 ```
 
 ## Sourcecode.java:
 
+```
+import java.util.*;
+public class Main
+{
+    public static void main(String[]args)
+  {
+        Scanner scan = new Scanner(System.in);
+        String name = scan.nextLine();
+        StringTokenizer st = new StringTokenizer(name);
+        System.out.println("Total number of Tokens: "+st.countTokens());
+   }
+}
 
-
-
-
-
+```
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/d9e530aa-7f1f-4ce1-9845-c4a69c78b3d1)
 
 
 ## RESULT:
-Thus the Java program using constructor to print the circumference of rectangle was executed successfully.
+Thus the Java program successfully has calculate the number of tokens present in the tokenizer string.
+
+
